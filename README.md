@@ -4,7 +4,7 @@
 * 所有接口的响应都是JSON格式 
 
 # 通用规则
-* 签名
+## 签名
 请求参数按照字典排序，然后以keyvalue的形式拼接成字符串string，最后sign=MD5(string+secretKey)。注意：如果请求参数中value为NULL的
 情况，则在拼接字符串时不计入签名字符串。
 例如：
@@ -25,7 +25,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
 * post请求参数采用表单格式提交数据
   content-type:application/x-www-form-urlencoded
   
-* 错误码
+## 错误码
 
 | 错误码 | 说明 | 备注 |
 | --- | --- | --- |
@@ -58,7 +58,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
 | 110034 | 提现失败 |  |
 
 # 接口信息
-* 行情
+## 行情
 
 | 接口 | 描述 |
 | --- | --- |
@@ -67,7 +67,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
 | /open/api/get_trades | 获取行情成交记录 |
 | /open/api/market_dept | 查询买卖盘深度 |
 
-* 交易
+## 交易
 
 | 接口 | 描述 |
 | --- | --- |
