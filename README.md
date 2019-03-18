@@ -82,7 +82,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
 | /open/api/user/account | 资产余额 |
 
 # 接口明细
-##GET /open/api/get_records 获取K线数据
+## GET /open/api/get_records 获取K线数据
 该接口不进行签名校验
 * 参数
 
@@ -126,7 +126,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
     ]
 ]
 ```
-##GET /open/api/get_ticker 获取当前行情
+## GET /open/api/get_ticker 获取当前行情
 * 参数
 
 
@@ -150,7 +150,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
 }
 
 ```
-##GET /open/api/get_trades 获取行情成交记录
+## GET /open/api/get_trades 获取行情成交记录
 * 参数
 
 | 参数 | 填写类型 | 说明 |
@@ -181,7 +181,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
 ]
 ```
 
-##GET /open/api/market_dept 查询买卖盘深度
+## GET /open/api/market_dept 查询买卖盘深度
 * 参数
 
 | 参数 | 填写类型 | 说明 |
@@ -215,7 +215,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
             }
 }
 ```
-##GET /open/api/all_order 获取全部委托
+## GET /open/api/all_order 获取全部委托
 * 参数
 
 | 参数 | 填写类型 | 说明 |
@@ -302,7 +302,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
     ]
 }
 ```
-##GET /open/api/all_trade 获取全部成交记录
+## GET /open/api/all_trade 获取全部成交记录
 * 参数
 
 | 参数 | 填写类型 | 说明 |
@@ -368,7 +368,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
     ]
 }
 ```
-##GET /open/api/cancel_order 取消委托单
+## GET /open/api/cancel_order 取消委托单
 * 参数
 
 | 参数 | 填写类型 | 说明 |
@@ -386,7 +386,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
 | code | 0 | code>0失败 |
 | msg | “Suc” |  |
 | data |   |  |
-##GET /open/api/common/symbols 查询系统支持的所有交易对及精度
+## GET /open/api/common/symbols 查询系统支持的所有交易对及精度
 * 参数
 
 | 参数 | 填写类型 | 说明 |
@@ -450,7 +450,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
     ]
 }
 ```
-##POST /open/api/create_order 创建订单
+## POST /open/api/create_order 创建订单
 * 参数
 
 | 参数 | 填写类型 | 说明 |
@@ -471,7 +471,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
 | code | 0 | code>0失败 |
 | msg | “Suc” |  |
 | data |  {"order_id":34343} |  成功返回交易ID|
-##GET /open/api/market 获取各个币对的最新成交价
+## GET /open/api/market 获取各个币对的最新成交价
 * 参数
 
 | 参数 | 填写类型 | 说明 |
@@ -487,7 +487,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
 | code | 0 | code>0失败 |
 | msg | “Suc” |  |
 | data |  {"btcusdt":15000,"ethusdt":800}|  |
-##GET /open/api/new_order 获取当前委托
+## GET /open/api/new_order 获取当前委托
 * 参数
 
 | 参数 | 填写类型 | 说明 |
@@ -579,7 +579,7 @@ sign = MD5(string+secretKey) = MD5(api_key0816016bb06417f50327e2b557d39aaasymbol
 订单状态(status)说明:
 INIT(0,"初始订单，未成交未进入盘口"), NEW_(1,"新订单，未成交进入盘口"), FILLED(2,"完全成交"), PART_FILLED(3,"部分成交"), CANCELED(4,"已撤单"), PENDING_CANCEL(5,"待撤单"), EXPIRED(6,"异常订单");
 ```
-##GET /open/api/order_info 获取订单详情
+## GET /open/api/order_info 获取订单详情
 * 参数
 
 | 参数 | 填写类型 | 说明 |
@@ -631,7 +631,7 @@ INIT(0,"初始订单，未成交未进入盘口"), NEW_(1,"新订单，未成交
     ]
 }
 ```
-##GET /open/api/user/account 资产余额
+## GET /open/api/user/account 资产余额
 * 参数
 
 | 参数 | 填写类型 | 说明 |
