@@ -58,29 +58,30 @@ finally：sign=48105baf432a6626051a72fb160b617e
 # API information
 ## market
 
-| API | description |
-| --- | --- |
-| /open/api/get_records | get K line data |
-| /open/api/get_ticker | get transaction record |
-| /open/api/get_trades | get the market transaction record |
-| /open/api/market_dept | query market depth |
+| API | description | api_key necessary |
+| --- | --- |--- |
+| /open/api/get_records | get K line data | no |
+| /open/api/get_ticker | get transaction record | no |
+| /open/api/get_trades | get the market transaction record | no |
+| /open/api/market_dept | query market depth | no |
 
 ## transaction
 
-| API | description |
-| --- | --- |
-| /open/api/all_order | get all orders |
-| /open/api/all_trade | get all the transaction records |
-| /open/api/cancel_order | cancel all orders |
-| /open/api/common/symbols | query all transaction pairs and precision supported by the system |
-| /open/api/create_order | create order |
-| /open/api/market | get the latest transaction price for each transaction pair |
-| /open/api/new_order | get the current latest oder |
-| /open/api/order_info | get order details |
-| /open/api/user/account | asset balance |
+| API | description | api_key necessary |
+| --- | --- | --- |
+| /open/api/all_order | get all orders | yes |
+| /open/api/all_trade | get all the transaction records | yes |
+| /open/api/cancel_order | cancel all orders | yes |
+| /open/api/common/symbols | query all transaction pairs and precision supported by the system | no |
+| /open/api/create_order | create order | yes |
+| /open/api/market | get the latest transaction price for each transaction pair | yes |
+| /open/api/new_order | get the current latest oder | yes |
+| /open/api/order_info | get order details | yes |
+| /open/api/user/account | asset balance | yes |
 
 # API detail
 ## GET /open/api/get_records    get K line data
+don't need to check api_key 
 The interface does not perform signature verification.
 * parameter
 
@@ -126,8 +127,7 @@ The interface does not perform signature verification.
 ```
 ## GET /open/api/get_ticker  get transaction record
 * parameter
-
-
+don't need to check api_key 
 | parameter | type | remark |
 | --- | --- | --- |
 | symbol | essential | market mark, bchbtc, see below for details |
@@ -150,7 +150,7 @@ The interface does not perform signature verification.
 ```
 ## GET /open/api/get_trades get the market transaction record
 * parameter
-
+don't need to check api_key 
 | parameter | type | remark |
 | --- | --- | --- |
 | symbol | essential | market mark，btcusdt，see below for details |
@@ -181,7 +181,7 @@ The interface does not perform signature verification.
 
 ## GET /open/api/market_dept query market depth
 * parameter
-
+don't need to check api_key 
 | parameter | type | remark |
 | --- | --- | --- |
 | symbol | essential | market mark，btcusdt，see below for details |
@@ -387,7 +387,7 @@ The interface does not perform signature verification.
 
 ## GET /open/api/common/symbols  query all transaction pairs and precision supported by the system
 * parameter
-
+don't need to check api_key 
 | parameter | type | remark |
 | --- | --- | --- |
 | none | | |
